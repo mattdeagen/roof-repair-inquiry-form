@@ -17,28 +17,31 @@
         </div>
         <div class="form-container">
             <form action="" id="inquiries-form">
-                <p>Let's fix your roof!</p>
+                <h2 id="form-logo"><i class="fa-solid fa-house-circle-check"></i> RooftopCrew Roof Services</h2>
                 <h1>Inquiries</h1>
+                <p>A leaky roof can cause mold, slippery floors, higher energy bills, and even be a fire hazard! 
+                    At RooftopCrew, our 9-step process ensures that your roof is durable enough to prevent these issues all year round.</p><br>
+                <p>Let's fix your roof!</p><br>
                 <div class="input-container">
                     <div class="name">
                         <div class="first-name">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="firstName" id="first-name">
+                            <input type="text" name="firstName" id="first-name" placeholder="Your first name" required>
                         </div>
                         <div class="last-name">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="lastName" id="last-name">
+                            <input type="text" name="lastName" id="last-name" placeholder="Your last name" required>
                         </div>
                     </div>
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
 
                     <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phoneNumber" id="phone-number">
+                    <input type="tel" name="phoneNumber" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
 
                     <label for="leave-message">Leave Your Message</label>
-                    <textarea name="messaeg" id="leave-message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="leave-message" cols="30" rows="10" placeholder="Your message" required></textarea>
 
                     <input type="submit" value="Submit" id="submit-btn">
                 </div>
